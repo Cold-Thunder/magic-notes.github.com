@@ -14,7 +14,6 @@ addBtn.addEventListener("click", () => {
     localStorage.setItem("notes", JSON.stringify(noteObj));
     addTxt.value = " ";
     console.log(noteObj);
-
     showNotes();
 })
 
@@ -43,7 +42,7 @@ function showNotes() {
         notesElm.innerHTML = html;
     }
     else {
-        ntoeElm.innerHTML = `Nothing to show! Use "Add Note" to add notes.`;
+        notesElm.innerHTML = `Nothing to show! Use "Add Note" to add notes.`;
     }
 }
 
